@@ -22,7 +22,7 @@ BlTable = NewType('BlTable', list)
 """
 BlRow = NewType('BlRow', dict)
 
-def tabulate_table(table: list,
+def tabulate_table(table: BlTable,
                    headers: bool=True,
                    table_format: str="simple") -> str:
     """Consumes a BlTable and produces a String representing it in some
