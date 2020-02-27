@@ -3,4 +3,9 @@ language: python
 python:
   - "3.7"
 install: pip install tox-travis
-script: tox
+script:
+  - tox
+  - coverage run --source blrequests -m py.test
+  - coverage report -m
+after_success:
+  - coveralls
