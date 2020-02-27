@@ -1,8 +1,6 @@
 import setuptools
 from glob import glob
 from os.path import basename
-from os.path import dirname
-from os.path import join
 from os.path import splitext
 
 with open("README.md", "r") as fh:
