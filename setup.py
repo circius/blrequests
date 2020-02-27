@@ -39,6 +39,8 @@ setuptools.setup(
     ],
     install_requires=[
         'Click',
+        'beautifulsoup4',
+        'tabulate',
     ],
     entry_points='''
     [console_scripts]
