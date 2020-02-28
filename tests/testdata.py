@@ -19,9 +19,11 @@ isou_row = {
     "author": "ISOU, Isidore",
     "shelfmark": "X.512/2179",
     "year": "1972",
+    "volume": "",
+    "notes": "",
     "status": "Request submitted",
-    "deliver_to": "RARE BOOKS & MUSIC",
-    "date_required": "28 Feb 2020",
+    "deliver to": "RARE BOOKS & MUSIC",
+    "date required": "28 Feb 2020",
 }
 
 isou_1row_table = [isou_row]
