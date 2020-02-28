@@ -37,7 +37,6 @@ def row_generate_blrow(row: List[str]) -> BlRow:
 BlRow
 
     """
-    print(row)
     return {header: cell for header, cell in zip(HEADERS, row)}
 
 
