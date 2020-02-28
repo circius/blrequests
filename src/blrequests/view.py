@@ -7,7 +7,7 @@ from tabulate import tabulate
 from typing import NewType
 
 
-def tabulate_table(
+def tabulate_bltable(
     table: BlTable, headers: bool = True, table_format: str = "simple"
 ) -> str:
     """Consumes a BlTable and produces a String representing it in some
