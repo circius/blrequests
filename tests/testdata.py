@@ -22,12 +22,13 @@ with open(isou_row_file, "r") as f:
 isou_table_soup = BeautifulSoup(isou_table, "html.parser")
 isou_row_soup = BeautifulSoup(isou_row, "html.parser")
 
-# this is a python dictionary, written by hand, of the contents of
-# isou_table.
+# this is a python dictionary whose values correspond exactly to the
+# contents of isou_table, with \n, \r and \xa0 stripped. This is what
+# we test against for now.
 isou_row = {
-    "title": "La création divine",
-    "author": "ISOU, Isidore",
-    "shelfmark": "X.512/2179",
+    "title": "La création divine, la transformati -on récente de l'Ég...",
+    "author": "ISOU, Isidore,",
+    "shelfmark": "X.512/2179.",
     "year": "1972",
     "volume": "",
     "notes": "",
