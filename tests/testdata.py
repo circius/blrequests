@@ -7,8 +7,7 @@ from bs4 import BeautifulSoup
 
 THISDIR = os.path.dirname(__file__)
 
-# this is a copy of a table from myrequests.bl.uk with one row
-# note that
+# this is a copy of a one-row table from myrequests.bl.uk with one row
 isou_table_file = os.path.join(THISDIR, "isou_table.html")
 with open(isou_table_file, "r") as f:
     isou_table = f.read()
