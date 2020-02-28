@@ -13,7 +13,14 @@ isou_table_file = os.path.join(THISDIR, "isou_table.html")
 with open(isou_table_file, "r") as f:
     isou_table = f.read()
 
+# this is a copy of a row from isou_table_file
+isou_row_file = os.path.join(THISDIR, "isou_row.html")
+with open(isou_row_file, "r") as f:
+    isou_row = f.read()
+
+
 isou_table_soup = BeautifulSoup(isou_table, "html.parser")
+isou_row_soup = BeautifulSoup(isou_row, "html.parser")
 
 # this is a python dictionary, written by hand, of the contents of
 # isou_table.
