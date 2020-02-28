@@ -3,6 +3,7 @@ by pytest
 
 """
 import os
+from bs4 import BeautifulSoup
 
 THISDIR = os.path.dirname(__file__)
 
@@ -11,6 +12,8 @@ THISDIR = os.path.dirname(__file__)
 isou_table_file = os.path.join(THISDIR, "isou_table.html")
 with open(isou_table_file, "r") as f:
     isou_table = f.read()
+
+isou_table_soup = BeautifulSoup(isou_table, "html.parser")
 
 # this is a python dictionary, written by hand, of the contents of
 # isou_table.
