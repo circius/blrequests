@@ -37,3 +37,21 @@ isou_row = {
 }
 
 isou_1row_table = [isou_row]
+
+blrequestsrc_password = """
+[Authentication]
+username=hello
+password=world
+passeval="""
+
+blrequestsrc_passeval = """
+[Authentication]
+username=hello
+password=
+passeval=Accounts/bl"""
+
+blrequestsrc_passeval_and_password = """
+[Authentication]
+username=hello
+password=world
+passeval=Accounts/bl"""
