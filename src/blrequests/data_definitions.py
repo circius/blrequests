@@ -1,6 +1,7 @@
 """ data definitions for blrequests
 """
 from typing import NewType
+from typing import Tuple
 
 """ A BLTABLE is a [List-of BLROW]
 """
@@ -20,3 +21,5 @@ BlTable = NewType("BlTable", list)
         'date required' -> STRING
 """
 BlRow = NewType("BlRow", dict)
+
+Credentials = NewType("Credentials", Tuple[str, str])
