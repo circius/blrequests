@@ -7,7 +7,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="blrequests", 
+    name="blrequests",
     version="0.0.1",
     author="circius",
     author_email="circius@posteo.de",
@@ -15,9 +15,9 @@ setuptools.setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/circius/bl-requests",
-    packages=setuptools.find_packages('src'),
-    package_dir={'': 'src'},
-    py_modules=[splitext(basename(path))[0] for path in glob('src/*.py')],
+    packages=setuptools.find_packages("src"),
+    package_dir={"": "src"},
+    py_modules=[splitext(basename(path))[0] for path in glob("src/*.py")],
     include_package_data=True,
     zip_safe=False,
     classifiers=[
@@ -28,20 +28,12 @@ setuptools.setup(
         "Operating System :: OS Independent",
         "Topic :: Utilities",
     ],
-    keywords=[
-        'british-library', 'cli'
-    ],
-    python_requires='>=3.6',
-    setup_requires=[
-        'pytest-runner',
-    ],
-    install_requires=[
-        'Click',
-        'beautifulsoup4',
-        'tabulate',
-    ],
-    entry_points='''
+    keywords=["british-library", "cli"],
+    python_requires=">=3.6",
+    setup_requires=["pytest-runner",],
+    install_requires=["Click", "beautifulsoup4", "tabulate",],
+    entry_points="""
     [console_scripts]
     blrequests=blrequests.cli:cli
-'''
+""",
 )
